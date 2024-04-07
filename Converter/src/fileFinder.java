@@ -10,6 +10,17 @@ class fileFinder {
             Scanner scan = new Scanner(fileDir);
             System.out.println("");
             System.out.println(scan.nextLine());
+            System.out.println("");
+            System.out.println("Is this file ok?(y/n)");
+            Scanner in2 = new Scanner(System.in);
+            String answer2 = in2.nextLine();
+            if( answer2 == "y"){
+                fileConverter app1 = new fileConverter();
+                app1.run();
+            }
+            if (answer2 == "n") {
+                System.out.println("");
+            }
         }
     }
 }
